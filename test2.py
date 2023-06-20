@@ -33,6 +33,6 @@ with mp_pose.Pose(
             landmark_drawing_spec=mp_drawing_styles.get_default_pose_landmarks_style())
         # 보기 편하게 이미지를 좌우 반전합니다.
         cv2.imshow('MediaPipe Pose', cv2.flip(image, 1))
-        if cv2.waitKey(5) & 0xFF == 27:
+        if cv2.waitKey(5) & 0xFF == 27: # 0xFF == 27 는 ESC키
             break
 cap.release()
